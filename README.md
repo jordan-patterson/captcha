@@ -8,7 +8,7 @@ Easily implement captchas in your web applications to prevent spam.
 ```
 ## Usage
 
-###server
+### server
 ```go
 package main
 
@@ -33,7 +33,7 @@ func main(){
 }
 ```
 
-###client
+### client
 ```html
     <form method="POST">
         Name:<input type="text" name="name" requierd>
@@ -41,7 +41,7 @@ func main(){
         Message:<input type="text" name="message" required>
         Are you human? 
         <img src="localhost:5050/captcha">
-        <input type="text" name="captcha">
+        <input type="text" name="captcha" required>
         <input type="submit" value="Send">
     </form>
 ```
